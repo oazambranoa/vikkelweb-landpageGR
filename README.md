@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.vikkel.co">
-    <img alt="Vikkel" src="src/images/vikkel/Recurso9logo_blanco.png" width="60" />
+    <img alt="Vikkel" src="src/images/vikkel/Recurso9logo_blanco.png" width="250" />
   </a>
 </p>
 <h1 align="center">
