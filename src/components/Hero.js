@@ -22,19 +22,22 @@ export const Hero = () => {
 export default Hero
 
 const HeroContainer = styled.div`
-    background: #0c0c0c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    height: 100vh;
-    padding: 0 1rem;
-    position: relative;
-    margin-top: -80px;
+    & {
+        background: #0c0c0c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 100vh;
+        padding: 0 1rem;
+        position: relative;
+        margin-top: -80px;
+    }
+    
 
-    :before,
-    div:before {
-        content:"",
+
+    &:before {
+        content: "",
         position: absolute;
         top: 0;
         bottom: 0;
@@ -54,7 +57,7 @@ const HeroContainer = styled.div`
     }
 
 
-`
+`;
 
 const HeroBg = styled.div`
     position: absolute;

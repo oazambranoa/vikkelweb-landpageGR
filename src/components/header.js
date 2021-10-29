@@ -4,11 +4,12 @@ import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { Button } from './Button'
+import { Logo } from '../images/vikkel/Recurso9logo_blanco'
 
 const Header = () => {
   return (
     <Nav>
-      <NavLink to='/'>Vikkel</NavLink>
+      <NavLink to='/'><img src={Logo} alt="vikkel" /></NavLink>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) =>(
@@ -25,6 +26,8 @@ const Header = () => {
   )
 }
 export default Header
+
+
 
 const Nav = styled.nav`
  background: transparent;
