@@ -1,12 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Vikkel app`,
+    description: `La app que te lleva por donde debes`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    "gatsby-plugin-web-font-loader",
+    
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
