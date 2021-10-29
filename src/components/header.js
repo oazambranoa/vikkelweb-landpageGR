@@ -27,10 +27,11 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
- background: #091B28;
+ background: transparent;
  height: 80px;
  display: flex;
- justify-content: space-between;
+ justify-content: flex-end;
+ align-items: center;
  padding: 0.5rem calc((100vw- 1300px)/2);
  z-index: 100;
  position: relative;
@@ -39,6 +40,7 @@ const NavLink = styled(Link)`
 color:#fff;
 display: flex;
 align-items: center;
+margin-right: auto;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
@@ -60,7 +62,7 @@ const Bars = styled(FaBars)`
 `
 const NavMenu = styled.div`
   display: flex;
-  align-items: center;
+  align-items: right;
   margin-right: -48px;
  
   @media screen and (max-width: 768px){
@@ -72,6 +74,7 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 24px;
+  margin-left: 50px;
 
   @media screen and (max-width: 768px){
     display: none;
