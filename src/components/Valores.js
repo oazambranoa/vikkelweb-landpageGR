@@ -39,16 +39,16 @@ const Valores = () => {
             <ContentWrapper>
                 <ColumnaUno>
                 <Valor>
-                    <h3>Los mejores servicios tecnologicos en la ruta</h3>
-                    <p>Mapas, rutas, top de ciudad, todo lo que necesites para tu bicicleta y mucho más en nuestra app.</p>
+                    <h3>Los mejores servicios tecnológicos en la ruta.</h3>
+                    <p>Mapas, rutas top de ciudad, todo lo que necesites para tu bicicleta y mucho más en Vikkel app.</p>
                 </Valor>
                 <Valor>
-                    <h3>Vive la comunidad en tus manos</h3>
-                    <p>Si quieres reunirte con tus parceros, deja que Vikkel por ti y si necesitas apoyo.</p>
+                    <h3>Vive la comunidad en tus manos.</h3>
+                    <p>Planifica salidas con tus parceros, enterate de las rodadas de tu ciudad y las rutas más recomendadas.</p>
                 </Valor>
                 <Valor>
-                    <h3>Sientete seguro y confiado en tu bici</h3>
-                    <p>Sabemos que tu y tu bic son unicos, te acompañaremos ante hurtos, accidentes o emergencias.</p>
+                    <h3>Siéntete seguro y confiado en tu cicla.</h3>
+                    <p>Sabemos que tú y tu bici son únicos, por eso te acompañaremos ante hurtos, accidentes o emergencias.</p>
                 </Valor>
                 </ColumnaUno>
                 <ColumnaDos>
