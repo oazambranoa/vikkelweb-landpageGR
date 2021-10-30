@@ -11,9 +11,9 @@ export const Hero = () => {
             </HeroBg>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Un nuevo camino a tus pedales</HeroH1>
-                    <HeroP>Aquí empieza algo chimba</HeroP>
-                    <Button primary="true" round="true" to="/subscribe">Subscribete</Button>
+                    <HeroH1>Vive la ciudad en tu bici de una forma diferente.</HeroH1>
+                    <HeroP>Únete a Vikkel y empieza a rodar con nosotros.</HeroP>
+                    <Button primary="true" round="true" to="/subscribe">Únete</Button>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>

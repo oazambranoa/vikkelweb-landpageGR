@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
-
+import { Button } from './Button'
 
 
 
@@ -15,7 +15,7 @@ const Valores = () => {
           edges {
             node {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 2248, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -31,10 +31,10 @@ const Valores = () => {
     return (
         <ValoresContainer>
             <TopLine>
-                Valores
+            Todo lo que necesitas para que tu rodada sea increible
             </TopLine>
             <Description>
-                Todo lo que necesitas para que tu rodada sea increible
+            Creamos unión y soporte en la comunidad, brindando al ciclista confianza y seguridad, que inspira una movilidad hacia el futuro.
             </Description>
             <ContentWrapper>
                 <ColumnaUno>
@@ -50,6 +50,9 @@ const Valores = () => {
                     <h3>Siéntete seguro y confiado en tu cicla.</h3>
                     <p>Sabemos que tú y tu bici son únicos, por eso te acompañaremos ante hurtos, accidentes o emergencias.</p>
                 </Valor>
+                <ContenedorButton>
+                    <Button primary="true" round="true" to="/subscribe">¡Quiero saber más!</Button>
+                </ContenedorButton>
                 </ColumnaUno>
                 <ColumnaDos>
                     {data.allFile.edges.map((image, key)=>(
@@ -73,18 +76,17 @@ const ValoresContainer = styled.div`
 
 `
 const TopLine = styled.p` 
-    color: #077bf1;
-    font-size: 1rem;
-    padding-left 2rem;
-    margin-bottom: 0.75rem;
+    font-size: clamp(1.5rem, 5vw,  2rem);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weigth: lighter;
 
 `
 const Description = styled.p`
     text-align: center;
-    padding-left: 2rem;
     margin-bottom: 4rem;
     font-size: clamp(1.5rem, 5vw,  2rem);
-    font-weight: bold;
+    font-weight: 300;
 
 
 `
@@ -110,8 +112,6 @@ const Valor = styled.div`
     h3 {
         margin-bottom: 1rem;
         font-size: 1.5rem;
-        font-style: italic;
-        color: red
     }
     p {
         color: #3b3b3b;
@@ -121,21 +121,27 @@ const Valor = styled.div`
 `
 
 const ColumnaDos = styled.div`
+    padding-top: 1rem;
+    padding-right: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 8fr 2fr;
     margin-top: 2rem;
     grid-gap: 10px;
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 900px){
         grid-template-columns: 1fr;
 
     }
 
 `
 const Images = styled(Img)`
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100%;
 
+`
+
+const ContenedorButton = styled.div`
+    margin-top: 2rem;
 `
 
 
