@@ -36,8 +36,8 @@ const HeroContainer = styled.div`
     
 
 
-    &:before {
-        content: "",
+    &::before {
+        content: ' ',
         position: absolute;
         top: 0;
         bottom: 0;

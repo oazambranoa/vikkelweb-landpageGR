@@ -4,12 +4,12 @@ import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { Button } from './Button'
-import { Logo } from '../images/vikkel/Recurso9logo_blanco'
+
 
 const Header = () => {
   return (
     <Nav>
-      <NavLink to='/'><img src={Logo} alt="vikkel" /></NavLink>
+      <NavLink to='/'>Vikkel</NavLink>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) =>(
@@ -37,7 +37,7 @@ const Nav = styled.nav`
  align-items: center;
  padding: 0.5rem calc((100vw- 1300px)/2);
  z-index: 100;
- position: relative;
+ position: sticky;
  `
 const NavLink = styled(Link)`
 color:#fff;

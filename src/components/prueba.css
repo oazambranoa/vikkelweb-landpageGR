@@ -8,6 +8,7 @@
     padding: 0 1rem;
     position: relative;
     margin-top: -80px;
+    position: sticky;
 
     
 }
@@ -31,4 +32,30 @@
             rgba(0,0,0,0.6) 0%, 
             transparent 100%,
             );
+}
+.cua{
+    text-align: center;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    font-size: clamp(1.5rem, 5vw,  2rem);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+    
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.ajajajja{
+    padding-top: 1rem;
+    padding-right: 2rem;
+
+
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-size: italic;
+        font-style:normal ;
+    
 }
