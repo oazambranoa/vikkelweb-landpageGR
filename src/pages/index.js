@@ -1,6 +1,7 @@
 import * as React from "react"
 import Bussiness from "../components/Bussiness"
 import Comunity from "../components/Comunity"
+import Footer from "../components/Footer"
 import Funcionalidades from "../components/Funcionalidades"
 import Hero from "../components/Hero"
 import Layout from "../components/layout"
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Bussiness/>
     <Prices />
     <Subscribe />
+    
   </Layout>
 )
 
