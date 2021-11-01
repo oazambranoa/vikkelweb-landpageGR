@@ -29,7 +29,7 @@ const Footer = () => {
                 </FooterLinksItems>
                 <FooterLinksItems>
                     <FooterLinkTitle>Empresa</FooterLinkTitle>
-                    <FooterLink to='/'>Contactanos</FooterLink>
+                    <FooterLink href="mailto:contacto@vikkel.co?Subject=Soy%20negocio%20y%20quiero%20más%20%20información.">Contactanos</FooterLink>
                     <FooterLink to='/'>Terminos y condiciones</FooterLink>
                     <FooterLink to='/'>Politica de privacidad</FooterLink>
                 </FooterLinksItems>
@@ -37,10 +37,10 @@ const Footer = () => {
             <FooterLinksWrapper>
                 <FooterLinksItems>
                 <FooterLinkTitle>Siguenos</FooterLinkTitle>
-                <FooterLink to='/'><BsFacebook/></FooterLink>
-                <FooterLink to='/'><BsInstagram/></FooterLink>
-                <FooterLink to='/'><BsLinkedin/></FooterLink>
-                <Button primary="true" round="true" to="/subscribe">Suscribete</Button>
+                <FooterLink to='https://www.facebook.com/vikkelco/' target="_blank"><BsFacebook/></FooterLink>
+                <FooterLink to='https://instagram.com/vikkelco' target="_blank"><BsInstagram/></FooterLink>
+                <FooterLink to='https://www.linkedin.com/'><BsLinkedin/></FooterLink>
+                <Button primary="true" round="true"  to="/#suscribete">Suscribete</Button>
                 </FooterLinksItems>
             </FooterLinksWrapper>
         </FooterContainer>

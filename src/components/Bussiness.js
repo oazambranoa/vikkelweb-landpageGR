@@ -32,7 +32,7 @@ const Bussiness = ()=> {
                         ))}
                 </BussinesColumnaDos>
                 <BussinesColumnaUno>
-                    <BussinesTitle>Vikkel Business </BussinesTitle>
+                    <BussinesTitle id='empresas'>Vikkel Business </BussinesTitle>
                     <BussinessParraf>
                         <p>¡No pases desapercibido!, se visible en el mapa de Vikkel App, todos los ciclistas te encontraran fácilmente en sus rutas.</p>
                         <p>Si tienes algo que ofrecer a nuestra comunidad, no lo dudes, crece con nosotros y vende tus servicios o productos  a un segmento de mercado totalmente centralizado.</p>
@@ -40,9 +40,9 @@ const Bussiness = ()=> {
                     </BussinessParraf>
                     <ContenedorButton>
                         
-                            <Button primary="true" round="true" to="/subscribe">¡Si, quiero!</Button>
+                            <Button primary="true" round="true" to="/#suscribete">¡Si, quiero!</Button>
                         
-                            <Button primary="true" round="true" to="/subscribe">Contactanos</Button>
+                            <Button primary="true" round="true" href="mailto:contacto@vikkel.co?Subject=Soy%20negocio%20y%20quiero%20más%20%20información.">Contactanos</Button>
                          
                     </ContenedorButton>
                 </BussinesColumnaUno>

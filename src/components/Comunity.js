@@ -61,7 +61,7 @@ const Comunity = () => {
                             ¡no te preocupes! toda la comunidad responderá tu llamado. </p>
                     </CoData>
                     <ContenedorButton>
-                        <Button primary="true" round="true" to="/subscribe">Unirme ahora</Button>
+                        <Button primary="true" round="true" to="/#suscribete">Unirme ahora</Button>
                     </ContenedorButton>
                 </CColumnaUno>
                 <CColumnaDos>

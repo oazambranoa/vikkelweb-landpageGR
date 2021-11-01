@@ -51,7 +51,7 @@ const Valores = () => {
                     <p>Sabemos que tú y tu bici son únicos, por eso te acompañaremos ante hurtos, accidentes o emergencias.</p>
                 </Valor>
                 <ContenedorButton>
-                    <Button primary="true" round="true" to="/subscribe">¡Quiero saber más!</Button>
+                    <Button primary="true" round="true" to="/#suscribete">¡Quiero saber más!</Button>
                 </ContenedorButton>
                 </ColumnaUno>
                 <ColumnaDos>

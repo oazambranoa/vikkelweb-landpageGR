@@ -1,4 +1,4 @@
 export const menuData = [
-    {title: "Tienda", link: "/tienda"},
-    {title: "Para Empresas", link: "/empresas"}
+    {title: "Tienda", link: "/"},
+    {title: "Para Empresas", link: "/#empresas"}
 ]

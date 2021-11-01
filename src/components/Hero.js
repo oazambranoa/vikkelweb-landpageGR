@@ -13,7 +13,7 @@ export const Hero = () => {
                 <HeroItems>
                     <HeroH1>Vive la ciudad en tu bici de una forma diferente.</HeroH1>
                     <HeroP>Únete a Vikkel y empieza a rodar con nosotros.</HeroP>
-                    <Button primary="true" round="true" to="/subscribe">Únete</Button>
+                    <Button primary="true" round="true" to="/#suscribete">Únete</Button>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>

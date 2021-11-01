@@ -8,7 +8,7 @@ const Subscribe = () => {
     return (
         <FormContainer>
             <FormContent>
-                <h1>Prueba cuanto antes Vikkel App beta</h1>
+                <h1 id="suscribete">Prueba cuanto antes Vikkel App beta</h1>
                 <p>Suscríbete y se el primero en rodar con nosotros, te notificaremos cuando Vikkel esté listo para ti.</p>
                 <form action="#">
                     <FormWrap>

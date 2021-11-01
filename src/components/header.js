@@ -8,6 +8,7 @@ import Logo from './Logo'
 
 
 
+
 const Header = () => {
   return (
     <Nav>
@@ -22,7 +23,7 @@ const Header = () => {
 
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true" to="/subs">Subscribete</Button>
+        <Button primary="true" round="true" to="/#suscribete">Subscribete</Button>
       </NavBtn>
     </Nav>
   )

@@ -40,7 +40,7 @@ const Funcionalidades = () => {
                         <p>En nuestro mapa encontraras puntos de interés, zonas seguras, estado vial, tiendas, sitios de mantenimiento y asistencia. Todo a un clic de distancia.</p>
                     </Func>
                     <FContenedorButton>
-                        <Button primary="true" round="true" to="/subscribe">Suscribete</Button>
+                        <Button primary="true" round="true" to="/#suscribete">Suscribete</Button>
                     </FContenedorButton>
                 </FColumnaUno>
                 
