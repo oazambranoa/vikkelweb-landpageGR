@@ -21,7 +21,6 @@ const IndexPage = () => (
     <Bussiness/>
     <Prices />
     <Subscribe />
-    
   </Layout>
 )
 

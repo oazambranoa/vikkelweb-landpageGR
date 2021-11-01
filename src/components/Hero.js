@@ -23,7 +23,7 @@ export default Hero
 
 const HeroContainer = styled.div`
     & {
-        background: #0c0c0c;
+        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,7 +36,7 @@ const HeroContainer = styled.div`
     
 
 
-    &::before {
+    :before {
         content: ' ',
         position: absolute;
         top: 0;
@@ -66,7 +66,7 @@ const HeroBg = styled.div`
     right: 0;
     left: 0;
     width 100%;
-    height: 100%;
+    height: 90%;
     overflow: hidden;    
 `
 

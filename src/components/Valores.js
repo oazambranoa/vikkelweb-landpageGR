@@ -47,7 +47,7 @@ const Valores = () => {
                     <p>Planifica salidas con tus parceros, enterate de las rodadas de tu ciudad y las rutas más recomendadas.</p>
                 </Valor>
                 <Valor>
-                    <h3>Siéntete seguro y confiado en tu cicla.</h3>
+                    <h3>Siéntete seguro y confiado en tu bicicleta.</h3>
                     <p>Sabemos que tú y tu bici son únicos, por eso te acompañaremos ante hurtos, accidentes o emergencias.</p>
                 </Valor>
                 <ContenedorButton>
@@ -77,7 +77,7 @@ const ValoresContainer = styled.div`
 `
 const TopLine = styled.p` 
     font-size: clamp(1.5rem, 5vw,  2rem);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     font-weigth: lighter;
 
@@ -85,7 +85,7 @@ const TopLine = styled.p`
 const Description = styled.p`
     text-align: center;
     margin-bottom: 4rem;
-    font-size: clamp(1.5rem, 5vw,  2rem);
+    font-size: clamp(0.5rem, 5vw,  1rem);
     font-weight: 300;
 
 

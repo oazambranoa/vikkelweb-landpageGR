@@ -28,22 +28,37 @@ const Comunity = () => {
     `)
     return (
         <ComunityContainer>
-             <TitleCoDescription>Comunidad Vikkel</TitleCoDescription>
-                <CoDescription>Vive la ciudad a tu manera con toda la red de ciclistas en un solo lugar, apoyándonos y creciendo juntos por la movilidad del futuro.</CoDescription>
             <ComunityWrapper>
                 <CColumnaUno>
+                <TitleCoDescription>Comunidad Vikkel</TitleCoDescription>
+                <CoDescription>Vive la ciudad a tu manera con toda la red de ciclistas en un solo lugar, apoyándonos y creciendo juntos por la movilidad del futuro.</CoDescription>
                     <CoData>
-                        <GiPathDistance/>
+                        <GiPathDistance
+                        css={
+                            `color: #7cb518;
+                            font-size: 2rem;
+                            margin-bottom: 0.5rem;`
+                        }/>
                         <p>Recibe recomendaciones de las mejores rutas, por ciclistas como tú.</p>
                     </CoData>
                     <CoData>
-                        <SiCrystal/>
+                        <SiCrystal
+                        css={
+                            `color: #f3de2c;
+                            font-size: 2rem;
+                            margin-bottom: 0.5rem;`
+                        }/>
                         <p>Pedaleando llenaras tu monedero y podrás canjealo por servicios en Vikkel app, y pronto por servicios en tu ciudad.</p>
                     </CoData>
                     <CoData>
-                        <IoBicycle />
+                        <IoBicycle
+                        css={
+                            `color: #fb6107;
+                            font-size: 2rem;
+                            margin-bottom: 0.5rem;`
+                        }/>
                         <p>¿Inconvenientes en la ruta?, ¿te caíste o te robaron? 
-¡no te preocupes! toda la comunidad responderá tu llamado. </p>
+                            ¡no te preocupes! toda la comunidad responderá tu llamado. </p>
                     </CoData>
                     <ContenedorButton>
                         <Button primary="true" round="true" to="/subscribe">Unirme ahora</Button>
@@ -64,12 +79,12 @@ const TitleCoDescription = styled.div`
     font-size: clamp(1.5rem, 5vw,  2rem);
     margin-bottom: 1rem;
     text-align: left;
-    font-weigth: lighter;
+    font-weight: bold;
 `
 const CoDescription = styled.div`
     text-align: left;
-    margin-bottom: 4rem;
-    font-size: clamp(1.5rem, 5vw,  2rem);
+    margin-bottom: 1rem;
+    font-size: clamp(0.5rem, 5vw,  1rem);
     font-weight: 300;
 `
 const ComunityContainer = styled.div`

@@ -2,13 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { Button } from './Button'
+import Logo from './Logo'
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterLinksWrapper>
                 <FooterDescr>
-                    <h1> Vikkel</h1>
+                    <Logo />
                 </FooterDescr>
                 <FooterLinksItems>
                     <FooterLinkTitle>Aplicacion Movil</FooterLinkTitle>
@@ -33,9 +37,10 @@ const Footer = () => {
             <FooterLinksWrapper>
                 <FooterLinksItems>
                 <FooterLinkTitle>Siguenos</FooterLinkTitle>
-                </FooterLinksItems>
-                <FooterLinksItems>
-                    <Button primary="true" round="true" to="/subscribe">Suscribete</Button>
+                <FooterLink to='/'><BsFacebook/></FooterLink>
+                <FooterLink to='/'><BsInstagram/></FooterLink>
+                <FooterLink to='/'><BsLinkedin/></FooterLink>
+                <Button primary="true" round="true" to="/subscribe">Suscribete</Button>
                 </FooterLinksItems>
             </FooterLinksWrapper>
         </FooterContainer>

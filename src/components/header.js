@@ -4,12 +4,14 @@ import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { Button } from './Button'
+import Logo from './Logo'
+
 
 
 const Header = () => {
   return (
     <Nav>
-      <NavLink to='/'>Vikkel</NavLink>
+      <NavLink to='/'><Logo /></NavLink>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) =>(
@@ -30,24 +32,29 @@ export default Header
 
 
 const Nav = styled.nav`
- background: transparent;
- height: 80px;
- display: flex;
- justify-content: flex-end;
- align-items: center;
- padding: 0.5rem calc((100vw- 1300px)/2);
- z-index: 100;
- position: sticky;
+  background: rgba(9, 27, 40, 0.4);
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem calc((100vw- 1300px)/2);
+  z-index: 100;
+  position: sticky;
  `
 const NavLink = styled(Link)`
-color:#fff;
-display: flex;
-align-items: center;
-margin-right: auto;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
+  color:#ffff;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  h4{
+    color:#ed6955;
+    font-size: 25px;
+  }
 `
 const Bars = styled(FaBars)`
   display: none;

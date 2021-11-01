@@ -13,7 +13,6 @@ export const Button = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s !important;
-    margin-left: 10px;
     margin-right: 10px;
     border-radius:  ${({ round }) => (round ? '50px': 'none')};
 

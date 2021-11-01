@@ -91,7 +91,7 @@ const BussinesTitle = styled.div`
     font-size: clamp(1.5rem, 5vw,  2rem);
     margin-bottom: 0.1rem;
     text-align: left;
-    font-weigth: lighter;
+    font-weight: bold;
 `
 const Images = styled(Img)`
     border-radius: 5px;
