@@ -23,6 +23,9 @@ const Subscribe = () => {
                         <label>
                             <input type= 'email' placeholder= 'Email' id= 'email'/>
                         </label><br/>
+                        <label>
+                            <CheckBox><input css={`height: 10px;`} type="checkbox" id="coding" name="interest" value="coding"/></CheckBox>
+                        Acepta terminos y condiciones</label><br/>
                         <Button as='button' type='submit' primary='true' round='true' css={`height: 48; margin-top: 10px;`} >Subscribete</Button>
                     </FormWrap>
                 </form>
@@ -97,6 +100,12 @@ const FormWrap = styled.div`
     input{
         border: 5px white solid;
     
+    }
+
+`
+const CheckBox = styled.div`
+    input{
+        height: 15px;
     }
 
 `
