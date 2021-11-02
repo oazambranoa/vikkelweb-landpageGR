@@ -1,33 +1,89 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormBg from '../assets/images/vikkel/bicis.jpg'
-
+import { Component } from 'react'
 import { Button } from './Button'
+import { getFirebase } from '../utils/firebaselogin'
 
-const Subscribe = () => {
-    return (
-        <FormContainer>
-            <FormContent>
-                <h1 id="suscribete">Prueba cuanto antes Vikkel App beta</h1>
-                <p>Suscríbete y se el primero en rodar con nosotros, te notificaremos cuando Vikkel esté listo para ti.</p>
-                <form action="#">
-                    <FormWrap>
-                        <h3>Suscríbete para obtener nuestra Aplicación Beta</h3>
-                        <label htmlFor="Nombres">
-                            <input type='text' placeholder='Nombre(s)' id='name' />
-                        </label> <br/>
-                        <label htmlFor='Apellidos'>
-                            <input type='text' placeholder='Apellidos' id='lasname' />
-                        </label><br/>
-                        <label>
-                            <input type= 'email' placeholder= 'Email' id= 'email'/>
-                        </label><br/>
-                        <Button as='button' type='submit' primary='true' round='true' css={`height: 48; margin-top: 10px;`} >Subscribete</Button>
-                    </FormWrap>
-                </form>
-            </FormContent>
-        </FormContainer>
-    )
+import firebase from '@firebase/app';
+// import getFirestore from "@firebase/firestore"
+// import { initializeApp } from "firebase/app"
+import getFirestore from '@firebase/firestore';
+
+const firebaseApp = getFirebase(firebase)
+const firestore = firebaseApp.firestore();
+
+class Subscribe extends Component {
+    constructor (props){
+        super(props);
+        this.state = {
+            names: "",
+            lastname: "",
+            email: "",
+            terms: " ",
+        };
+    }
+
+    handleInputChange = event =>{
+        this.setState({ [event.target.id]: event.target.value }); 
+    }
+
+    handleClick () {
+        this.setState({value: ' '})
+        var event = new Event('input', { bubbles: true });
+        this.myinput.dispatchEvent(event);
+      }
+
+    handleSubmit = event => {
+        event.preventDefault()
+
+        // database connection to cloud firestore 
+        const db = firestore;
+
+        // create a table(collection) called 'users' in cloud firestore in order to store info
+        db.collection('suscriptores').add({
+            names: this.state.names,
+            lastname: this.state.lastname,
+            email: this.state.email,
+            terms: Date(),
+        });  
+
+        this.setState({
+            names: "",
+            lastname: "",
+            email: "",
+            terms: " ",
+        });
+        alert("Tu solicitud se ha enviado con exito")
+    };
+
+    render() {
+        // const { submit } = this.state;
+
+        return (
+            <FormContainer>
+                <FormContent>
+                    <h1 id="suscribete">Prueba cuanto antes Vikkel App beta</h1>
+                    <p>Suscríbete y se el primero en rodar con nosotros, te notificaremos cuando Vikkel esté listo para ti.</p>
+                    <form onSubmit={this.handleSubmit}>
+                        <FormWrap>
+                            <h3>Suscríbete para obtener nuestra Aplicación Beta</h3>
+                            <label htmlFor="Nombres">
+                                <input required type='text' value={this.state.names} onChange={this.handleInputChange} placeholder='Nombre(s)' id='names' />
+                            </label> <br/>
+                            <label htmlFor='Apellidos'>
+                                <input required type='text' value={this.state.lastname} onChange={this.handleInputChange} placeholder='Apellidos' id='lastname' />
+                            </label><br/>
+                            <label>
+                                <input required type= 'email'  value={this.state.email} onChange={this.handleInputChange} placeholder= 'Email' id= 'email' />
+                            </label><br/>
+                            <Button as='button' type='submit' primary='true' round='true' css={`height: 48; margin-top: 10px;`} >Subscribete</Button>
+                        </FormWrap>
+                    </form>
+                </FormContent>
+            </FormContainer>
+        )
+    }
 }
 
 export default Subscribe
