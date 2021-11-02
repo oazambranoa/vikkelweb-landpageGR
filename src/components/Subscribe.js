@@ -5,6 +5,7 @@ import FormBg from '../assets/images/vikkel/bicis.jpg'
 import { Button } from './Button'
 
 const Subscribe = () => {
+    
     return (
         <FormContainer>
             <FormContent>
