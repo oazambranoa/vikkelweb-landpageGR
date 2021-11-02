@@ -28,6 +28,7 @@ class Subscribe extends Component {
         this.setState({ [event.target.id]: event.target.value }); 
     }
 
+
     handleClick () {
         this.setState({value: ' '})
         var event = new Event('input', { bubbles: true });
@@ -84,6 +85,7 @@ class Subscribe extends Component {
             </FormContainer>
         )
     }
+
 }
 
 export default Subscribe

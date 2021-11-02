@@ -14,13 +14,13 @@ const Footer = () => {
                 <FooterDescr>
                     <Logo />
                 </FooterDescr>
-                <FooterLinksItems>
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
+            <FooterLinksItems>
                     <FooterLinkTitle>Aplicacion Movil</FooterLinkTitle>
                     <FooterLink to='/'>Caracteristicas</FooterLink>
                     <FooterLink to='/'>Videos</FooterLink>
                 </FooterLinksItems>
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
                 <FooterLinksItems>
                     <FooterLinkTitle>Comunidad</FooterLinkTitle>
                     <FooterLink to='/'>Blog</FooterLink>
@@ -33,8 +33,6 @@ const Footer = () => {
                     <FooterLink to='/'>Terminos y condiciones</FooterLink>
                     <FooterLink to='/'>Politica de privacidad</FooterLink>
                 </FooterLinksItems>
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
                 <FooterLinksItems>
                 <FooterLinkTitle>Siguenos</FooterLinkTitle>
                 <FooterLink to='https://www.facebook.com/vikkelco/' target="_blank"><BsFacebook/></FooterLink>
@@ -50,9 +48,9 @@ const Footer = () => {
 export default Footer
 
 const FooterContainer = styled.div`
-    padding: 5rem calc((100vw - 1000px) / 3);
+    padding: 5rem calc((100vw - 1100px) / 2);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     color: #000;
     background: #091b28;
 `
@@ -63,14 +61,14 @@ const FooterDescr = styled.div`
         color: #ed6955;
 
     }
-    @media screen and(max-width: 400px){
+    @media screen and(max-width: 450px){
         padding: 1rem;
     }
 
 `
 const FooterLinksWrapper = styled.div`
     display: grid;
-    grid-template-columns:  repeat(3, 1fr);
+    grid-template-columns:  repeat(4, 25%);
     @media screen and (max-width: 820px){
         grid-template-columns: 1fr;
     }

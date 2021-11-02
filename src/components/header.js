@@ -10,6 +10,7 @@ import Logo from './Logo'
 
 
 const Header = () => {
+  
   return (
     <Nav>
       <NavLink to='/'><Logo /></NavLink>
@@ -51,7 +52,6 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
   h4{
     color:#ed6955;
     font-size: 25px;
@@ -60,7 +60,6 @@ const NavLink = styled(Link)`
 const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-
   @media screen and (max-width: 768px){
     display: block;
     position: absolute;
@@ -79,16 +78,13 @@ const NavMenu = styled.div`
   @media screen and (max-width: 768px){
     display: none;
   }
-
 `
 const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 24px;
   margin-left: 50px;
-
   @media screen and (max-width: 768px){
     display: none;
   }
-
 `
