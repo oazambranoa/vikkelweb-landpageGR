@@ -1,17 +1,17 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-import firebase from '@firebase/app';
+// import firebase from '@firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBgNDJ_-h2GAVZb4HpwPU_uJp4Xy6AZ@w4w",
-  authDomain: "vikkel-webpage.firebaseapp.com",
-  projectId: "vikkel-webpage",
-  storageBucket: "vikkel-webpage.appspot.com",
-  messagingSenderId: "28055597444",
-  appId: "1:28055597444:web:8dd573546d1066afb66dd1",
-  measurementId: "G-SQCTJ1RT4P"
+  apiKey: "AIzaSyBiILoLk9UBt5oEAmBzRZ49XUflnz6d7lQ",
+  authDomain: "vikkel-webpage-d6d18.firebaseapp.com",
+  projectId: "vikkel-webpage-d6d18",
+  storageBucket: "vikkel-webpage-d6d18.appspot.com",
+  messagingSenderId: "26201565460",
+  appId: "1:26201565460:web:67497b464712eb9af7ba01",
+  measurementId: "G-WE7QFRMMEG"
 };
 
 let firebaseInstance

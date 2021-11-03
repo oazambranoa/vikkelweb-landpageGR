@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+// import { Link, Text, StyleSheet } from 'react';
 import FormBg from '../assets/images/vikkel/bicis.jpg'
 import { Component } from 'react'
 import { Button } from './Button'
@@ -8,7 +9,7 @@ import { getFirebase } from '../utils/firebaselogin'
 import firebase from '@firebase/app';
 // import getFirestore from "@firebase/firestore"
 // import { initializeApp } from "firebase/app"
-import getFirestore from '@firebase/firestore';
+// import getFirestore from '@firebase/firestore';
 
 const firebaseApp = getFirebase(firebase)
 const firestore = firebaseApp.firestore();
@@ -20,10 +21,21 @@ class Subscribe extends Component {
             names: "",
             lastname: "",
             email: "",
+            checkterms: false,
             terms: " ",
         };
     }
 
+    checktermsevent = event => {
+        const checked = event.target.checked;
+        if (checked) {
+            this.setState({
+                checkterms: true,
+                terms: Date(),
+            });
+        }
+    }
+    
     handleInputChange = event =>{
         this.setState({ [event.target.id]: event.target.value }); 
     }
@@ -37,25 +49,29 @@ class Subscribe extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
-
-        // database connection to cloud firestore 
         const db = firestore;
 
-        // create a table(collection) called 'users' in cloud firestore in order to store info
+        // if (this.state.checkterms) {
+            // database connection to cloud firestore 
+            // create a table(collection) called 'users' in cloud firestore in order to store info
         db.collection('suscriptores').add({
             names: this.state.names,
             lastname: this.state.lastname,
             email: this.state.email,
-            terms: Date(),
+            checkterms: this.state.checkterms,
+            terms: this.state.terms,
         });  
 
         this.setState({
             names: "",
             lastname: "",
             email: "",
+            checkterms: false,
             terms: " ",
         });
+
         alert("Tu solicitud se ha enviado con exito")
+        // }
     };
 
     render() {
@@ -78,9 +94,15 @@ class Subscribe extends Component {
                             <label>
                                 <input required type= 'email'  value={this.state.email} onChange={this.handleInputChange} placeholder= 'Email' id= 'email' />
                             </label><br/>
-                            <label>
-                            <CheckBox><input css={`height: 10px;`} type="checkbox" id="coding" name="interest" value="coding"/></CheckBox>
-                            Acepta terminos y condiciones</label><br/>
+                            <label> <CheckBox>
+                                        <input required css={`height: 10px;`} onClick={(e) => {this.checktermsevent(e);}} type="checkbox" id="check" name="interest" checked={this.state.checkterms}/>
+                                        <div>
+                                            <span>Acepto</span>
+                                            <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' >Terminos</a>
+                                            <span> y </span>
+                                            <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' class='automatic'>Politica de privacidad</a>
+                                        </div></CheckBox>
+                            </label><br/>
                             <Button as='button' type='submit' primary='true' round='true' css={`height: 48; margin-top: 10px;`} >Subscribete</Button>
                         </FormWrap>
                     </form>
@@ -88,7 +110,6 @@ class Subscribe extends Component {
             </FormContainer>
         )
     }
-
 }
 
 export default Subscribe
@@ -165,4 +186,11 @@ const CheckBox = styled.div`
         height: 15px;
     }
 
+    a{
+        color: #ED6955;
+        font-weight: bold;
+    }
+
 `
+
+
