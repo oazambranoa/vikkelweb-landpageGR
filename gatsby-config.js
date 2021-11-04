@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Vikkel app`,
-    description: `La app que te lleva por donde debes`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Vive la ciudad en tu bici de una forma diferente. Únete a Vikkel y empieza a rodar con nosotros`,
+    author: `@Omarwin32`,
+    siteUrl: `https://www.vikkel.co/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
