@@ -86,13 +86,13 @@ class Subscribe extends Component {
                         <FormWrap>
                             <h3>Suscríbete para obtener nuestra Aplicación Beta</h3>
                             <label htmlFor="Nombres">
-                                <input required type='text' value={this.state.names} onChange={this.handleInputChange} placeholder='Nombre(s)' id='names' />
+                                <input required type='text' value={this.state.names} onChange={this.handleInputChange} placeholder='Nombre(s)' id='names' autocomplete='name' />
                             </label> <br/>
                             <label htmlFor='Apellidos'>
-                                <input required type='text' value={this.state.lastname} onChange={this.handleInputChange} placeholder='Apellidos' id='lastname' />
+                                <input required type='text' value={this.state.lastname} onChange={this.handleInputChange} placeholder='Apellidos' id='lastname' autocomplete='family-name'/>
                             </label><br/>
                             <label>
-                                <input required type= 'email'  value={this.state.email} onChange={this.handleInputChange} placeholder= 'Email' id= 'email' />
+                                <input required type= 'email'  value={this.state.email} onChange={this.handleInputChange} placeholder= 'Email' id= 'email' autocomplete='email' />
                             </label><br/>
                             <label> <CheckBox>
                                         <input required css={`height: 10px;`} onClick={(e) => {this.checktermsevent(e);}} type="checkbox" id="check" name="interest" checked={this.state.checkterms}/>
