@@ -30,8 +30,8 @@ const Footer = () => {
                 <FooterLinksItems>
                     <FooterLinkTitle>Empresa</FooterLinkTitle>
                     <FooterLink href="mailto:contacto@vikkel.co?Subject=Soy%20negocio%20y%20quiero%20más%20%20información.">Contactanos</FooterLink>
-                    <FooterLink to='/'>Terminos y condiciones</FooterLink>
-                    <FooterLink to='/'>Politica de privacidad</FooterLink>
+                    <FooterLink to='https://drive.google.com/file/d/1CFex9Bhct2y29ZranDvv7Sp4NqIxlVkO/view?usp=sharing' target="_blank">Terminos y condiciones</FooterLink>
+                    <FooterLink to='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' target="_blank">Politica de privacidad</FooterLink>
                 </FooterLinksItems>
                 <FooterLinksItems>
                 <FooterLinkTitle>Siguenos</FooterLinkTitle>
