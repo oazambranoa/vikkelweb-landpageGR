@@ -81,7 +81,7 @@ class Subscribe extends Component {
             <FormContainer>
                 <FormContent>
                     <h1 id="suscribete">Prueba cuanto antes Vikkel App beta</h1>
-                    <p>Suscríbete y se el primero en rodar con nosotros, te notificaremos cuando Vikkel esté listo para ti.</p>
+                    <p>Suscríbete y sé el primero en rodar con nosotros, te notificaremos cuando Vikkel esté listo para ti.</p>
                     <form onSubmit={this.handleSubmit}>
                         <FormWrap>
                             <h3>Suscríbete para obtener nuestra Aplicación Beta</h3>
@@ -185,7 +185,7 @@ const CheckBox = styled.div`
     input{
         height: 15px;
     }
-
+    display: inline-block;
     a{
         color: #ED6955;
         font-weight: bold;

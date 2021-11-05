@@ -37,10 +37,10 @@ const Funcionalidades = () => {
                     </Func>
                     <Func>
                         <h3>Mapa interactivo</h3>
-                        <p>En nuestro mapa encontraras puntos de interés, zonas seguras, estado vial, tiendas, sitios de mantenimiento y asistencia. Todo a un clic de distancia.</p>
+                        <p>En nuestro mapa encontrarás puntos de interés, zonas seguras, estado vial, tiendas, sitios de mantenimiento y asistencia. Todo a un clic de distancia.</p>
                     </Func>
                     <FContenedorButton>
-                        <Button primary="true" round="true" to="/#suscribete">Suscribete</Button>
+                        <Button primary="true" round="true" to="/#suscribete">Suscríbete</Button>
                     </FContenedorButton>
                 </FColumnaUno>
                 

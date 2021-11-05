@@ -10,7 +10,8 @@
     margin-top: -80px;
     position: sticky;
     font-weight: bold;
-    font-weigth: bold
+    font-weigth: bold;
+    display: inline-block; ;
     
 }
 

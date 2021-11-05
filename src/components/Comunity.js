@@ -48,7 +48,7 @@ const Comunity = () => {
                             font-size: 2rem;
                             margin-bottom: 0.5rem;`
                         }/>
-                        <p>Pedaleando llenaras tu monedero y podrás canjealo por servicios en Vikkel app, y pronto por servicios en tu ciudad.</p>
+                        <p>Pedaleando llenarás tu monedero y podrás canjearlo por servicios en Vikkel app, y pronto por servicios en tu ciudad.</p>
                     </CoData>
                     <CoData>
                         <IoBicycle

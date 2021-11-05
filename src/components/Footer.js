@@ -17,8 +17,8 @@ const Footer = () => {
             </FooterLinksWrapper>
             <FooterLinksWrapper>
             <FooterLinksItems>
-                    <FooterLinkTitle>Aplicacion Movil</FooterLinkTitle>
-                    <FooterLink to='/'>Caracteristicas</FooterLink>
+                    <FooterLinkTitle>Aplicación Móvil</FooterLinkTitle>
+                    <FooterLink to='/'>Características</FooterLink>
                     <FooterLink to='/'>Videos</FooterLink>
                 </FooterLinksItems>
                 <FooterLinksItems>
@@ -30,15 +30,15 @@ const Footer = () => {
                 <FooterLinksItems>
                     <FooterLinkTitle>Empresa</FooterLinkTitle>
                     <FooterLink href="mailto:contacto@vikkel.co?Subject=Soy%20negocio%20y%20quiero%20más%20%20información.">Contactanos</FooterLink>
-                    <FooterLink to='https://drive.google.com/file/d/1CFex9Bhct2y29ZranDvv7Sp4NqIxlVkO/view?usp=sharing' target="_blank">Terminos y condiciones</FooterLink>
-                    <FooterLink to='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' target="_blank">Politica de privacidad</FooterLink>
+                    <FooterLink to='https://drive.google.com/file/d/1CFex9Bhct2y29ZranDvv7Sp4NqIxlVkO/view?usp=sharing' target="_blank">Términos y condiciones</FooterLink>
+                    <FooterLink to='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' target="_blank">Política de privacidad</FooterLink>
                 </FooterLinksItems>
                 <FooterLinksItems>
-                <FooterLinkTitle>Siguenos</FooterLinkTitle>
+                <FooterLinkTitle>Síguenos</FooterLinkTitle>
                 <FooterLink to='https://www.facebook.com/vikkelco/' target="_blank"><BsFacebook/></FooterLink>
                 <FooterLink to='https://instagram.com/vikkelco' target="_blank"><BsInstagram/></FooterLink>
                 <FooterLink to='https://www.linkedin.com/'><BsLinkedin/></FooterLink>
-                <Button primary="true" round="true"  to="/#suscribete">Suscribete</Button>
+                <Button primary="true" round="true"  to="/#suscribete">Suscríbete</Button>
                 </FooterLinksItems>
             </FooterLinksWrapper>
         </FooterContainer>

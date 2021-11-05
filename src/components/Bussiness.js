@@ -34,7 +34,7 @@ const Bussiness = ()=> {
                 <BussinesColumnaUno>
                     <BussinesTitle id='empresas'>Vikkel Business </BussinesTitle>
                     <BussinessParraf>
-                        <p>¡No pases desapercibido!, se visible en el mapa de Vikkel App, todos los ciclistas te encontraran fácilmente en sus rutas.</p>
+                        <p>¡No pases desapercibido!, se visible en el mapa de Vikkel App, todos los ciclistas te encontrarán fácilmente en sus rutas.</p>
                         <p>Si tienes algo que ofrecer a nuestra comunidad, no lo dudes, crece con nosotros y vende tus servicios o productos  a un segmento de mercado totalmente centralizado.</p>
                         <p>Oferta con nosotros.</p>
                     </BussinessParraf>

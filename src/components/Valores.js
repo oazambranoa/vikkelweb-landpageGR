@@ -31,7 +31,7 @@ const Valores = () => {
     return (
         <ValoresContainer>
             <TopLine>
-            Todo lo que necesitas para que tu rodada sea increible
+            Todo lo que necesitas para que tu rodada sea increíble
             </TopLine>
             <Description>
             Creamos unión y soporte en la comunidad, brindando al ciclista confianza y seguridad, que inspira una movilidad hacia el futuro.
@@ -44,7 +44,7 @@ const Valores = () => {
                 </Valor>
                 <Valor>
                     <h3>Vive la comunidad en tus manos.</h3>
-                    <p>Planifica salidas con tus parceros, enterate de las rodadas de tu ciudad y las rutas más recomendadas.</p>
+                    <p>Planifica salidas con tus parceros, entérate de las rodadas de tu ciudad y las rutas más recomendadas.</p>
                 </Valor>
                 <Valor>
                     <h3>Siéntete seguro y confiado en tu bicicleta.</h3>
