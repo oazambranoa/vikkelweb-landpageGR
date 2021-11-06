@@ -95,12 +95,15 @@ class Subscribe extends Component {
                                 <input required type= 'email'  value={this.state.email} onChange={this.handleInputChange} placeholder= 'Email' id= 'email' autocomplete='email' />
                             </label><br/>
                             <label> <CheckBox>
-                                        <input required css={`height: 10px;`} onClick={(e) => {this.checktermsevent(e);}} type="checkbox" id="check" name="interest" checked={this.state.checkterms}/>
+                                        
                                         <div>
+                                        <input required css={`
+                                        height: 10px;
+                                        width: 30px;`} onClick={(e) => {this.checktermsevent(e);}} type="checkbox" id="check" name="interest" checked={this.state.checkterms}/>
                                             <span>Acepto</span>
-                                            <a href='https://drive.google.com/file/d/1CFex9Bhct2y29ZranDvv7Sp4NqIxlVkO/view?usp=sharing' target='_blank'>Terminos</a>
+                                            <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' >Terminos</a>
                                             <span> y </span>
-                                            <a href='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' class='automatic' target='_blank'>Politica de privacidad</a>
+                                            <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' class='automatic'>Politica de privacidad</a>
                                         </div></CheckBox>
                             </label><br/>
                             <Button as='button' type='submit' primary='true' round='true' css={`height: 48; margin-top: 10px;`} >Subscribete</Button>
@@ -182,8 +185,13 @@ const FormWrap = styled.div`
 
 `
 const CheckBox = styled.div`
+    div{    
+        display: inline;
+        text-align: center
+    }
     input{
         height: 15px;
+        width: 30px;
     }
     display: inline-block;
     a{
