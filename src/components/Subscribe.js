@@ -100,7 +100,7 @@ class Subscribe extends Component {
                                         <input required css={`
                                         height: 10px;
                                         width: 30px;`} onClick={(e) => {this.checktermsevent(e);}} type="checkbox" id="check" name="interest" checked={this.state.checkterms}/>
-                                            <span>Acepto</span>
+                                            <span>Acepto </span>
                                             <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' >Términos</a>
                                             <span> y </span>
                                             <a href='https://drive.google.com/file/d/1X1yIcKm3uWqN__pXsw7oK87ajzqfVrqx/view?usp=sharing' class='automatic'>Política de privacidad</a>
