@@ -40,7 +40,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Manrope: 400, 700`,
+          `Montserrat Alternates`,
         ],
         display: `swap`,
       },
