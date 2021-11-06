@@ -127,7 +127,7 @@ const FormContainer = styled.div `
         url(${FormBg}) no-repeat center;
     );
     background-size: cover;
-    height: 450px;
+    height: 600px;
     width: 100%;
     padding: 5rem  calc((100vw- 1300px) / 2);
     color: #fff;
