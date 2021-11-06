@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-google-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,9 +32,17 @@ module.exports = {
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/vikkel/Recurso6app_3.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Manrope: 400, 700`,
+        ],
         display: `swap`,
-        icon: `src/images/vikkel/Recurso6app_3.png`,
-        fonts: [`Montserrat Alternates`] // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
