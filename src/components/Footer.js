@@ -37,7 +37,7 @@ const Footer = () => {
                 <FooterLinkTitle>Síguenos</FooterLinkTitle>
                 <FooterLink to='https://www.facebook.com/vikkelco/' target="_blank"><BsFacebook/></FooterLink>
                 <FooterLink to='https://instagram.com/vikkelco' target="_blank"><BsInstagram/></FooterLink>
-                <FooterLink to='https://www.linkedin.com/'><BsLinkedin/></FooterLink>
+                <FooterLink to='https://www.linkedin.com/company/vikkel/'><BsLinkedin/></FooterLink>
                 <Button primary="true" round="true"  to="/#suscribete">Suscríbete</Button>
                 </FooterLinksItems>
             </FooterLinksWrapper>
