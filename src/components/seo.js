@@ -70,7 +70,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name:`facebook-domain-verification`,
-          content: 1409aix8klul89zgwrphy2yf1wmugo,
+          content: `1409aix8klul89zgwrphy2yf1wmugo`,
         },
       ].concat(meta)}
     />
