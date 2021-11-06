@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "vikkel-webpage",
-    "production_Vikkel": "vikkel-webpage-d6d18"
+    "production_Vikkel": "vikkel-webpage-d6d18",
+    "ProductionVikkel5N": "vikkel-webpage-d6d18"
   },
   "targets": {}
 }
