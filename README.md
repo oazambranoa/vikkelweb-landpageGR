@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.vikkel.co">
+  <a href="https://www.vikkel.co" target="_blank">
     <img alt="Vikkel" src="src/images/vikkel/Recurso9logo_blanco.png" width="250" />
   </a>
 </p>
