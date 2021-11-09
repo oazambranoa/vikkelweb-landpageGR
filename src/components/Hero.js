@@ -13,7 +13,8 @@ export const Hero = () => {
                 <HeroItems>
                     <HeroH1>Vive la ciudad en tu bici de una forma diferente.</HeroH1>
                     <HeroP>Únete a Vikkel y empieza a rodar con nosotros.</HeroP>
-                    <Button primary="true" round="true" to="/#suscribete">Únete</Button>
+                    <ButtonContainer><Button primary="true" round="true" to="/#suscribete">Únete</Button></ButtonContainer>
+                    
                 </HeroItems>
             </HeroContent>
         </HeroContainer>
@@ -115,4 +116,8 @@ const HeroP = styled.p`
     font-size: clamp(1rem, 3vw, 3rem);
     margin-bottom: 2rem;
     font-weight: 400;
+    padding: 0 1rem;
+`
+const ButtonContainer = styled.div`
+    padding: 0 1rem;
 `
