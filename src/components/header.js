@@ -9,6 +9,7 @@ import Logo from './Logo'
 
 
 
+
 const Header = () => {
   
   return (
@@ -27,6 +28,7 @@ const Header = () => {
         <Button primary="true" round="true" to="/#suscribete">Suscríbete</Button>
       </NavBtn>
     </Nav>
+    
   )
 }
 export default Header

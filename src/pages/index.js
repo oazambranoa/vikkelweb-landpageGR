@@ -11,6 +11,7 @@ import Subscribe from "../components/Subscribe"
 import Valores from "../components/Valores"
 
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Vikkel" />
