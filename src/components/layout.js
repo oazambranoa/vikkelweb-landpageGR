@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <>
     <CookieConsent
     style={{ background: "rgba(9, 27, 40, 0.9)" }}
-    buttonStyle={{background:"#ed6955", color:"#ffff", height:"40px",  borderRadius: "20px",}}
+    buttonStyle={{background:"#ed6955", color:"#ffff", height:"45px",  borderRadius: "15px",}}
     buttonText="Acepto" overlay
 
     >
