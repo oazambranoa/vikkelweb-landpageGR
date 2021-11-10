@@ -12,13 +12,14 @@ const Layout = ({ children }) => {
   return (
     <>
     <CookieConsent
-    style={{ background: "#091b28" }}
-    buttonStyle={{background:"#ed6955", color:"#ffff", height:"40px"}}
-    buttonText="Acepto"
+    style={{ background: "rgba(9, 27, 40, 0.9)" }}
+    buttonStyle={{background:"#ed6955", color:"#ffff", height:"40px",  borderRadius: "20px",}}
+    buttonText="Acepto" overlay
 
     >
-    Este sitio usa cookies. Vea nuestra
-    <a css={`color: #ed6955;`} href='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' class='automatic' target='_blank'> Política de privacidad</a> para más información
+    Utilizamos cookies propias y de terceros para ofrecer una mejor experiencia. Al continuar navegando en nuestro
+    sitio, autoriza su uso de acuerdo a nuestra
+    <a css={`color: #ed6955;`} href='https://drive.google.com/file/d/1Udyu6FQhKEqIUdapeJzdKKBX9BqcNyly/view?usp=sharing' class='automatic' target='_blank'> politica de tratamiento de datos personales y manejo de cookies </a>
     
     
     </CookieConsent>
